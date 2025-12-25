@@ -1,0 +1,97 @@
+:root {
+    --pri:rgb(226, 133, 46);
+    --sec:rgb(245, 200, 87);
+    --tri:rgb(255, 238, 145);
+    --quad:rgb(171, 224, 240);
+
+    
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 200;
+    src: url(/Users/mayank/Downloads/NewAeonikTrials/AeonikTrial-Regular.otf);
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(/Users/mayank/Downloads/NewAeonikTrials/AeonikTrial-Medium.otf);
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(/Users/mayank/Downloads/NewAeonikTrials/AeonikTrial-Bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: aeonik;
+    color: var(--tri);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a0a;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color:var(--quad);
+}
+section.allElms{
+    height: 100%;
+    width: 100%;
+    padding: 40px; 
+    padding-top: 80px;
+    background-color: var(--tri);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+}
+.elems{
+   background-color: var(--pri);
+   border-radius: 10px;
+   font-size: 20px;
+   height: 400px;
+   width: 330px;
+   overflow: hidden;
+   transition: all ease 0.5s;
+}
+.elems img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    
+}
+.elems h2{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.elems :active{
+    scale: 0.9;;
+    
+}
+
+.fullelem{
+  height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    font-size: medium;
+}
